@@ -20,10 +20,10 @@ public class Thanos {
 
         System.out.println("\nHeroes by age (descending) :");
         for (Hero hero : heroes.descendingSet()) {
+
             System.out.println(hero.getName() + ", " + hero.getAge());
         }
 
-        // TODO 3: Show heroes by age (ascending),from Spider-Man (include) to Iron Man (include)
         Hero spiderman = new Hero("Spider-Man", 18);
         Hero ironman = new Hero("Iron Man", 48);
         heroes.add(spiderman);
@@ -31,6 +31,7 @@ public class Thanos {
 
         System.out.println("\nSubset of heroes :");
         for (Hero hero : heroes.subSet(spiderman, true, ironman, true)) {
+
             System.out.println(hero.getName() + ", " + hero.getAge());
         }
     }
